@@ -1,3 +1,3 @@
-## Mission Control Mock UI
+## Mock UI for Alto
 
 Generated using Create React App
