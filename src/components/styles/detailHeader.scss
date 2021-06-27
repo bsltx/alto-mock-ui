@@ -7,23 +7,17 @@
     padding-top: $mobileContentPadding;
   }
 
-  .jumbo-time,
-  .jumbo-text {
-    color: $brown;
-    font-family: 'PxGrotesk Light', sans-serif;
-    margin: 15px 0 0 -0.2rem;
-    font-size: 4.5rem;
-    letter-spacing: -0.2rem;
-  }
-
-  .jumbo-time span {
-    margin-left: 8px;
-    font-size: 2rem;
-    letter-spacing: -0.1rem;
-  }
-
   .estimated-arrival {
     margin: 8px 0 0;
-    font-size: 0.8rem;
+    font-size: 14px;
+  }
+
+  @include large-mobile-and-tablet {
+    .card-title {
+      font-size: 1rem;
+    }
+    .estimated-arrival {
+      font-size: 1.1rem;
+    }
   }
 }

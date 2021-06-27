@@ -3,6 +3,10 @@
   width: 100%;
   height: $mobileNavHeight;
   background-color: $offwhite;
+
+  @include large-mobile-and-tablet {
+    height: $tabletNavHeight;
+  }
 }
 
 .bottom-nav {
@@ -15,6 +19,10 @@
     display: flex;
     justify-content: space-between;
     padding: 10px 0 0;
+
+    @include large-mobile-and-tablet {
+      margin: 0 $tabletContentPadding;
+    }
 
     img {
       align-self: flex-start;
@@ -43,6 +51,15 @@
 
       .eta {
         font-size: 12px;
+      }
+
+      @include large-mobile-and-tablet {
+        p {
+          font-size: 1rem;
+        }
+        .eta {
+          font-size: 14px;
+        }
       }
     }
   }

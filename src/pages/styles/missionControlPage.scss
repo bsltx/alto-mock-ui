@@ -1,3 +1,7 @@
 .mission-control {
-  padding: 0 20px;
+  padding: 0 $mobileContentPadding;
+
+  @include large-mobile-and-tablet {
+    padding: 0 $tabletContentPadding;
+  }
 }

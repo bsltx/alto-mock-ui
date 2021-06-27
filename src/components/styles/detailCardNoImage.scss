@@ -1,6 +1,10 @@
 .detail-card-no-image {
   height: calc(100vh - #{$mobileNavHeight});
 
+  @include large-mobile-and-tablet {
+    height: calc(100vh - #{$tabletNavHeight});
+  }
+
   .dcni-header {
     height: 250px;
     display: flex;
@@ -52,8 +56,20 @@
       margin-top: 20px;
 
       img {
-        margin-bottom: 2px;
+        margin: 0 0 2px 6px;
         cursor: pointer;
+      }
+    }
+
+    @include large-mobile-and-tablet {
+      .pickup,
+      .dropoff,
+      .custom-notes {
+        p {
+          margin: 0;
+          font-size: 16px;
+          color: $gray2;
+        }
       }
     }
   }

@@ -1,18 +1,13 @@
 @import './variables.scss';
 
 // media query mixins
-@mixin tablet-portrait {
-  @media (min-width: 576px) {
-    @content;
-  }
-}
-@mixin tablet-landscape {
-  @media (min-width: 992px) {
+@mixin large-mobile-and-tablet {
+  @media (min-width: $largeMobileAndTablet) {
     @content;
   }
 }
 @mixin desktop {
-  @media (min-width: 1200px) {
+  @media (min-width: $desktop) {
     @content;
   }
 }

@@ -11,8 +11,8 @@
   .cd-content,
   .cd-content-no-title {
     margin: 0;
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 13px;
+    line-height: 13px;
     color: $brown;
 
     p {
@@ -30,5 +30,15 @@
   .cd-content-no-title {
     @include paragraph-ls;
     color: $gray1;
+  }
+
+  @include large-mobile-and-tablet {
+    .cd-title,
+    .cd-content,
+    .cd-content-no-title {
+      margin: 0;
+      font-size: 16px;
+      line-height: 16px;
+    }
   }
 }

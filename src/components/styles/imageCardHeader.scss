@@ -3,6 +3,11 @@
   width: 100vw;
   max-width: calc(100% + #{$mobileContentPadding} + #{$mobileContentPadding});
 
+  @include large-mobile-and-tablet {
+    margin-left: -$tabletContentPadding;
+    max-width: calc(100% + #{$tabletContentPadding} + #{$tabletContentPadding});
+  }
+
   &.driver-image {
     background-position: 47% 20%;
   }

@@ -3,7 +3,6 @@ $transparent: rgba(157, 157, 157, 0);
 $black: rgb(0, 0, 0);
 $nearblack: rgb(30, 29, 30);
 $white: rgb(255, 255, 255);
-$bg-offwhite: rgb(247, 243, 239);
 $offwhite: rgb(247, 243, 239);
 $gray1: rgb(108, 104, 91);
 $gray2: rgb(119, 119, 119);
@@ -13,15 +12,14 @@ $gray5: rgb(234, 230, 219);
 $brown: rgb(63, 56, 37);
 $clayred: rgb(172, 130, 109);
 
-// media sizes
-$small: 576px;
-$medium: 768px;
-$large: 992px;
-$x-large: 1200px;
-$xx-large: 1400px;
+// media breakpoints
+$largeMobileAndTablet: 600px;
+$desktop: 1200px;
 
 // element sizing
 $mobileHeaderHeight: 55px;
 $mobileContentPadding: 20px;
+$tabletContentPadding: 40px;
 $mobileNavHeight: 60px;
+$tabletNavHeight: 80px;
 $imageCardHeaderHeight: 345px;
