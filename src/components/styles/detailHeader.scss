@@ -1,0 +1,29 @@
+.detail-header {
+  .card-title {
+    @include spaced-letters;
+    color: $clayred;
+    font-size: 11px;
+    margin: 0;
+    padding-top: $mobileContentPadding;
+  }
+
+  .jumbo-time,
+  .jumbo-text {
+    color: $brown;
+    font-family: 'PxGrotesk Light', sans-serif;
+    margin: 15px 0 0 -0.2rem;
+    font-size: 4.5rem;
+    letter-spacing: -0.2rem;
+  }
+
+  .jumbo-time span {
+    margin-left: 8px;
+    font-size: 2rem;
+    letter-spacing: -0.1rem;
+  }
+
+  .estimated-arrival {
+    margin: 8px 0 0;
+    font-size: 0.8rem;
+  }
+}

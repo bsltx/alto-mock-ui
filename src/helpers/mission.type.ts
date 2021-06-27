@@ -1,11 +1,11 @@
 export interface MissionType {
-  trip: TripType;
-  driver: DriverType;
-  vehicle: VehicleType;
-  vibe: VibeType;
+  trip: TripType | null;
+  driver: DriverType | null;
+  vehicle: VehicleType | null;
+  vibe: VibeType | null;
 }
 
-interface TripType {
+export interface TripType {
   estimated_arrival: string;
   estimated_fare_min: number;
   estimated_fare_max: number;
@@ -17,7 +17,7 @@ interface TripType {
   notes: string;
 }
 
-interface LocationType {
+export interface LocationType {
   name: string;
   street_line1: string;
   street_line2: string;
@@ -28,20 +28,20 @@ interface LocationType {
   long: string;
 }
 
-interface DriverType {
+export interface DriverType {
   name: string;
   image: string;
   bio: string;
   phone: string;
 }
 
-interface VehicleType {
+export interface VehicleType {
   license: string;
   make: string;
   color: string;
   image: string;
 }
 
-interface VibeType {
+export interface VibeType {
   name: string;
 }

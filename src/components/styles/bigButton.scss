@@ -1,0 +1,18 @@
+.big-btn {
+  @include spaced-letters;
+  width: 100%;
+  height: 40px;
+  color: $white;
+  background-color: $clayred;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.big-btn:disabled {
+  background-color: $transparent;
+  border: solid 1px $gray3;
+  color: $gray4;
+  cursor: auto;
+}

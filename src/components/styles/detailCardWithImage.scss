@@ -1,0 +1,15 @@
+.detail-card-with-image {
+  height: calc(100vh - #{$mobileNavHeight});
+
+  .image-card-header {
+    height: $imageCardHeaderHeight;
+  }
+
+  .dcwi-content {
+    height: calc(100% - #{$imageCardHeaderHeight} - #{$mobileNavHeight});
+
+    .detail-table {
+      margin-top: 40px;
+    }
+  }
+}

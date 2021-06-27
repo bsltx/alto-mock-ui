@@ -1,0 +1,30 @@
+.image-card-header {
+  margin-left: -$mobileContentPadding;
+  width: 100vw;
+  max-width: calc(100% + #{$mobileContentPadding} + #{$mobileContentPadding});
+
+  &.driver-image {
+    background-position: 47% 20%;
+  }
+
+  &.vehicle-image {
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &.trip-image {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    img {
+      position: absolute;
+      bottom: 5px;
+      right: $mobileContentPadding;
+    }
+
+    img:hover {
+      cursor: pointer;
+    }
+  }
+}

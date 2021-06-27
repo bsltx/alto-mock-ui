@@ -1,0 +1,34 @@
+.detail-table-item {
+  @include bdtop;
+  height: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 0 0;
+  width: 100%;
+
+  .cd-title,
+  .cd-content,
+  .cd-content-no-title {
+    margin: 0;
+    font-size: 12px;
+    line-height: 12px;
+    color: $brown;
+
+    p {
+      margin: 0;
+    }
+    a {
+      margin-left: 2px;
+    }
+  }
+
+  .cd-content {
+    font-weight: bold;
+  }
+
+  .cd-content-no-title {
+    @include paragraph-ls;
+    color: $gray1;
+  }
+}

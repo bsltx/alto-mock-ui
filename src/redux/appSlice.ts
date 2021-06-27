@@ -1,16 +1,21 @@
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { RootState } from 'src/redux/store';
-import { fetchMission } from 'src/utils/api/missionAPI';
-import { MissionType } from 'src/utils/interfaces/mission.type';
+import { fetchMission } from 'src/helpers/utils';
+import { MissionType } from 'src/helpers/mission.type';
 
 export interface AppState {
-  mission: MissionType | null;
+  mission: MissionType;
   status: string;
 }
 
 const initialState: AppState = {
-  mission: null,
-  status: 'idle',
+  mission: {
+    trip: null,
+    driver: null,
+    vehicle: null,
+    vibe: null
+  },
+  status: 'idle'
 };
 
 export const getMissionData = createAsyncThunk('app/fetchMission', async () => {
@@ -22,9 +27,14 @@ export const appSlice = createSlice({
   name: 'app',
   initialState,
   reducers: {
-    tempAction: (state) => {
-      console.log(state.mission);
+    changeVibe: (state, action: PayloadAction<string>) => {
+      state.mission.vibe = { name: action.payload };
     },
+    updateNotes: (state, action: PayloadAction<string>) => {
+      if (state.mission.trip) {
+        state.mission.trip.notes = action.payload;
+      }
+    }
   },
   extraReducers: (builder) => {
     builder
@@ -35,10 +45,11 @@ export const appSlice = createSlice({
         state.status = 'idle';
         state.mission = action.payload;
       });
-  },
+  }
 });
 
-export const { tempAction } = appSlice.actions;
+export const { changeVibe } = appSlice.actions;
 export const selectMission = (state: RootState) => state.app.mission;
+export const selectStatus = (state: RootState) => state.app.status;
 
 export default appSlice.reducer;

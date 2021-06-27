@@ -1,0 +1,31 @@
+@import './variables.scss';
+
+// media query mixins
+@mixin tablet-portrait {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+@mixin tablet-landscape {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+//misc mixins
+@mixin spaced-letters {
+  letter-spacing: 0.1rem;
+}
+
+@mixin bdtop {
+  border-top: solid 1px $gray5;
+}
+
+@mixin paragraph-ls {
+  line-height: 1rem;
+}

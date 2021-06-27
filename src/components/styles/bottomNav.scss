@@ -1,0 +1,49 @@
+.bottom-nav,
+.content-bumper {
+  width: 100%;
+  height: $mobileNavHeight;
+  background-color: $offwhite;
+}
+
+.bottom-nav {
+  @include bdtop;
+  position: fixed;
+  bottom: 0;
+
+  .nav-container {
+    margin: 0 $mobileContentPadding;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 0;
+
+    img {
+      align-self: flex-start;
+    }
+
+    img:hover {
+      cursor: pointer;
+    }
+
+    .nav-trip-details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+
+      p {
+        margin: -2px 0 0;
+        font-size: 14px;
+        color: $gray1;
+        letter-spacing: 1px;
+      }
+
+      p:first-of-type {
+        font-weight: bold;
+      }
+
+      .eta {
+        font-size: 12px;
+      }
+    }
+  }
+}

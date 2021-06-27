@@ -1,3 +1,13 @@
-@import 'utils/styles/variables.scss';
-@import 'utils/styles/fonts.scss';
-@import 'utils/styles/normalize.scss';
+@import './styles/variables.scss';
+@import './styles/fonts.scss';
+@import './styles/mixins.scss';
+@import './styles/normalize.scss';
+@import './pages/styles/missionControlPage.scss';
+@import './components/styles/index.scss';
+
+body {
+  font-family: 'PxGrotesk', sans-serif;
+  background-color: $offwhite;
+  color: $nearblack;
+  font-size: 16px;
+}
