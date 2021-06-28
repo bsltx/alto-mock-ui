@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/alto-mock-ui/static/css/main.0f60d0e9.chunk.css",
+    "main.js": "/alto-mock-ui/static/js/main.83ead67f.chunk.js",
+    "main.js.map": "/alto-mock-ui/static/js/main.83ead67f.chunk.js.map",
+    "runtime-main.js": "/alto-mock-ui/static/js/runtime-main.240a98f2.js",
+    "runtime-main.js.map": "/alto-mock-ui/static/js/runtime-main.240a98f2.js.map",
+    "static/js/2.ef0919a2.chunk.js": "/alto-mock-ui/static/js/2.ef0919a2.chunk.js",
+    "static/js/2.ef0919a2.chunk.js.map": "/alto-mock-ui/static/js/2.ef0919a2.chunk.js.map",
+    "index.html": "/alto-mock-ui/index.html",
+    "static/css/main.0f60d0e9.chunk.css.map": "/alto-mock-ui/static/css/main.0f60d0e9.chunk.css.map",
+    "static/js/2.ef0919a2.chunk.js.LICENSE.txt": "/alto-mock-ui/static/js/2.ef0919a2.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/alto-mock-ui/static/media/PxGrotesk-Screen.590b9def.otf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.240a98f2.js",
+    "static/js/2.ef0919a2.chunk.js",
+    "static/css/main.0f60d0e9.chunk.css",
+    "static/js/main.83ead67f.chunk.js"
+  ]
+}
