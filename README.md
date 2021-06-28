@@ -4,7 +4,7 @@
 
 Link to Application: https://bsltx.github.io/alto-mock-ui/
 
-Using the `gh-pages` package, I was able to include the `build` directory in the repo and host on GitHub Pages.
+Using the `gh-pages` package, I was able to include the `build` directory and host directly from the repo.
 
 ### To Run the App Locally:
 
@@ -36,7 +36,7 @@ npm start
 
 - Kabob nav is fully interactive and smooth scrolls the user to the appropriate sections.
 
-- I only included image and font assets that I used from the provided folder in order to reduce asset download.
+- I only included image and font assets that I used from the provided folder.
 
 - I did not scale up icon sizes with the responsive design because the PNG quality deteriorated quickly.
 
