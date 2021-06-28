@@ -6,6 +6,8 @@ Link to Application: https://bsltx.github.io/alto-mock-ui/
 
 Using the `gh-pages` package, I was able to include the `build` directory and host directly from the repo.
 
+Screenshots of deployed application available [here](https://drive.google.com/drive/folders/1P_0eSkULYN2CM94oBQM4gcPEba_1kIFT?usp=sharing)
+
 ### To Run the App Locally:
 
 ```
