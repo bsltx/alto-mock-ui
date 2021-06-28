@@ -52,26 +52,27 @@
     .desktop-row {
       display: flex;
       justify-content: space-between;
-      margin-bottom: $desktopContentPadding;
 
       .detail-card-with-image {
         width: 30%;
-        height: 65vh;
+        height: 600px;
 
         .detail-header {
-          height: 60%;
+          min-height: 40%;
         }
 
         .image-card-header {
           height: $imageCardHeaderDesktopHeight;
           max-width: 100%;
           margin: 0;
+
+          &.driver-image {
+            background-position: 50% 30%;
+          }
         }
 
         .dcwi-content {
-          height: calc(
-            100% - #{$imageCardHeaderDesktopHeight} - #{$tabletNavHeight}
-          );
+          height: 50%;
         }
       }
     }
