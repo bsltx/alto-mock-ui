@@ -9,7 +9,9 @@ const LogoHeader = ({ navIds }: LogoHeaderProps) => {
   return (
     <div className='logo-header'>
       <div className='content-spacer' />
-      <img src={logoImage} alt='Alto Brand Logo' />
+      <div className='logo-wrapper'>
+        <img src={logoImage} alt='Alto Brand Logo' />
+      </div>
       <KabobNav ids={navIds} />
     </div>
   );

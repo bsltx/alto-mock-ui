@@ -9,9 +9,22 @@
   width: 100%;
   height: $mobileHeaderHeight;
 
-  img {
-    height: 14px;
-    width: 50px;
+  .logo-wrapper {
+    align-self: flex-start;
+    height: 25%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: $offwhite;
+    padding: 15px;
+    border-radius: 0 0 100% 100%;
+    border: solid 1px $gray3;
+
+    img {
+      height: 14px;
+      width: 50px;
+    }
   }
 
   .kabob-nav {
