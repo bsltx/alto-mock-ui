@@ -1,6 +1,10 @@
 .kabob-nav {
   align-self: flex-end;
 
+  @include desktop {
+    display: none;
+  }
+
   .kabob-dots {
     display: flex;
     flex-direction: column;

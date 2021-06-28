@@ -14,9 +14,11 @@ const MissionControlPage = ({ navIds }: MissionControlPageProps) => {
   return (
     <div className='mission-control'>
       <DetailCardNoImage trip={trip} id={navIds[0]} />
-      <DetailCardWithImage driver={driver} id={navIds[1]} />
-      <DetailCardWithImage vehicle={vehicle} id={navIds[2]} />
-      <DetailCardWithImage trip={trip} vibe={vibe} id={navIds[3]} />
+      <div className='desktop-row'>
+        <DetailCardWithImage driver={driver} id={navIds[1]} />
+        <DetailCardWithImage vehicle={vehicle} id={navIds[2]} />
+        <DetailCardWithImage trip={trip} vibe={vibe} id={navIds[3]} />
+      </div>
     </div>
   );
 };

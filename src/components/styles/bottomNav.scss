@@ -13,15 +13,24 @@
   @include bdtop;
   position: fixed;
   bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 
   .nav-container {
-    margin: 0 $mobileContentPadding;
     display: flex;
+    margin: 0 $mobileContentPadding;
     justify-content: space-between;
     padding: 10px 0 0;
+    width: 100%;
 
     @include large-mobile-and-tablet {
       margin: 0 $tabletContentPadding;
+    }
+
+    @include desktop {
+      max-width: 1440px;
+      margin: 0 $desktopContentPadding;
     }
 
     img {

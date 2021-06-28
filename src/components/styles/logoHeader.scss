@@ -34,5 +34,10 @@
     @include large-mobile-and-tablet {
       right: $tabletContentPadding;
     }
+
+    @include desktop {
+      max-width: 1440px;
+      right: $desktopContentPadding;
+    }
   }
 }
