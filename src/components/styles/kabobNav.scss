@@ -21,12 +21,14 @@
     a::after,
     p::after {
       content: '\25CF';
-      width: 1em;
       color: $gray3;
     }
     p.outline::after {
       content: '\25CB';
-      width: 1em;
+      // unicode character 25CB is twice as big on iOS Safari
+      @supports (-webkit-touch-callout: none) {
+        font-size: 8px;
+      }
     }
     p.outline::after:hover {
       cursor: auto;

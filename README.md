@@ -30,6 +30,12 @@ npm start
 
 - I made a small change to the mission.json driver and vehicle image paths for my needs.
 
+### Device Info:
+
+- Developed on Windows 10 Chrome
+
+- Tested on MacOS Chrome (MacBook Pro), MacOS Safari (MacBook Pro), iOS Safari (iPhone 11 Pro Max), and Windows Chrome
+
 ### Notes:
 
 - Included mock actions that will alternate the user's Trip Notes and Vibe to some pre-set values upon interacting with those buttons.
