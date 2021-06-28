@@ -20,3 +20,13 @@ export const cityStateZipString = (location: LocationType) => {
   const { city, state, zipcode } = location;
   return `${city}, ${state} ${zipcode}`;
 };
+
+// Returns scroll percentage
+// Credit to https://stackoverflow.com/questions/2387136/cross-browser-method-to-determine-vertical-scroll-percentage-in-javascript
+export const getScrollPercent = () => {
+  const h = document.documentElement,
+    b = document.body,
+    st = 'scrollTop',
+    sh = 'scrollHeight';
+  return ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100;
+};

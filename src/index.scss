@@ -5,6 +5,10 @@
 @import './pages/styles/missionControlPage.scss';
 @import './components/styles/index.scss';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'PxGrotesk', sans-serif;
   background-color: $offwhite;

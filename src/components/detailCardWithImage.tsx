@@ -18,13 +18,15 @@ interface DetailCardWithImageProps {
   vehicle?: VehicleType | null;
   trip?: TripType | null;
   vibe?: VibeType | null;
+  id: string;
 }
 
 const DetailCardWithImage = ({
   driver,
   vehicle,
   trip,
-  vibe
+  vibe,
+  id
 }: DetailCardWithImageProps) => {
   const dispatch = useAppDispatch();
   const [cardType, setCardType] = useState('');
@@ -123,7 +125,7 @@ const DetailCardWithImage = ({
   };
 
   return (
-    <div className='detail-card-with-image'>
+    <div className='detail-card-with-image' id={id}>
       <ImageCardHeader cardType={cardType} {...imageHeaderProps} />
       <div className='dcwi-content'>
         <DetailHeader

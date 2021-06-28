@@ -11,6 +11,8 @@ const App = () => {
   const status = useAppSelector(selectStatus);
   const [showEnRoute, setShowEnRoute] = useState(false);
 
+  const navIds = ['tripCard', 'driverCard', 'vehicleCard', 'mapCard', ''];
+
   useEffect(() => {
     dispatch(getMissionData());
 
@@ -24,8 +26,12 @@ const App = () => {
   return (
     <div className='app'>
       <>
-        <LogoHeader />
-        {status === 'loading' ? <LoadingIndicator /> : <MissionControlPage />}
+        <LogoHeader navIds={navIds} />
+        {status === 'loading' ? (
+          <LoadingIndicator />
+        ) : (
+          <MissionControlPage navIds={navIds} />
+        )}
         <BottomNav showEnRoute={showEnRoute} />
       </>
     </div>

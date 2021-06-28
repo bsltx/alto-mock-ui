@@ -10,9 +10,10 @@ import editIcon from 'src/assets/images/Edit_icon.png';
 
 interface DetailCardNoImageProps {
   trip: TripType | null;
+  id: string;
 }
 
-const DetailCardNoImage = ({ trip }: DetailCardNoImageProps) => {
+const DetailCardNoImage = ({ trip, id }: DetailCardNoImageProps) => {
   const dispatch = useAppDispatch();
   const [details, setDetails] = useState({
     headerText: '',
@@ -91,7 +92,7 @@ const DetailCardNoImage = ({ trip }: DetailCardNoImageProps) => {
   };
 
   return (
-    <div className='detail-card-no-image'>
+    <div className='detail-card-no-image' id={id}>
       <div className='dcni-header'>
         <p>Your Trip</p>
       </div>

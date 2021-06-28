@@ -1,0 +1,32 @@
+.kabob-nav {
+  align-self: flex-end;
+
+  .kabob-dots {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    a,
+    p {
+      margin: 0;
+      text-decoration: none;
+      font-size: 14px;
+      line-height: 14px;
+      text-decoration: none;
+    }
+    a::after,
+    p::after {
+      content: '\25CF';
+      color: $gray3;
+    }
+    p.outline::after {
+      content: '\25CB';
+    }
+    p.outline::after:hover {
+      cursor: auto;
+    }
+    a.active::after {
+      color: $nearblack;
+    }
+  }
+}

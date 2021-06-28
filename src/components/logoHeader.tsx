@@ -1,9 +1,16 @@
 import logoImage from 'src/assets/images/Alto_logo.png';
+import KabobNav from './kabobNav';
 
-const LogoHeader = () => {
+interface LogoHeaderProps {
+  navIds: Array<string>;
+}
+
+const LogoHeader = ({ navIds }: LogoHeaderProps) => {
   return (
     <div className='logo-header'>
+      <div className='content-spacer' />
       <img src={logoImage} alt='Alto Brand Logo' />
+      <KabobNav ids={navIds} />
     </div>
   );
 };

@@ -5,12 +5,21 @@
   background-color: $transparent;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   width: 100%;
   height: $mobileHeaderHeight;
 
   img {
     height: 14px;
     width: 50px;
+  }
+
+  .kabob-nav {
+    position: absolute;
+    right: $mobileContentPadding;
+
+    @include large-mobile-and-tablet {
+      right: $tabletContentPadding;
+    }
   }
 }
